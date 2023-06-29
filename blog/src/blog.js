@@ -49,7 +49,7 @@ function renderPosts() {
         posts.forEach(function (post) {
             var postElement = document.createElement("div");
             postElement.classList.add("post");
-            postElement.innerHTML = "\n        <img src=\"".concat(post.imageUrl, "\" alt=\"").concat(post.title, "\" />\n        <h3>").concat(post.title, "</h3>\n        <p>").concat(post.content.substring(0, post.content.length / 2), "</p>\n        <p class=\"expand-text\"></br>expands...</p>\n      ");
+            postElement.innerHTML = "\n        <img src=\"".concat(post.imageUrl, "\" alt=\"").concat(post.title, "\" />\n        <h3>").concat(post.title, "</h3>\n        <p>").concat(post.content.substring(0, post.content.length / 2), "</p>\n        <p id=\"expand-text\"></br>expands...</p>\n      ");
             postElement.addEventListener("click", function () {
                 window.location.href = "post.html?id=".concat(post.id);
             });

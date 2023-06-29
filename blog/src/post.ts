@@ -51,6 +51,14 @@ const posts2: Post[] = [
   },
 ];
 
+function goBack() {
+  window.history.back();
+}
+
+const backButton = document.getElementById('back-button')!;
+backButton.addEventListener('click', goBack);
+
+
 function getPostById(id: number): Post | undefined {
   return posts2.find((post) => post.id === id);
 }
@@ -64,7 +72,7 @@ function displayPost(): void {
   if (post) {
     const postImageElement = document.getElementById('post-imageUrl');
     const postTitleElement = document.getElementById('post-title');
-    const postAuthorElement = document.getElementById('post-author');
+    //const postAuthorElement = document.getElementById('post-author');
     const postContentElement = document.getElementById('post-content');
 
     if (postImageElement) {
@@ -75,9 +83,9 @@ function displayPost(): void {
       postTitleElement.innerText = post.title;
     }
 
-    if (postAuthorElement) {
-      postAuthorElement.innerText = `Author: ${post.author}`;
-    }
+    // if (postAuthorElement) {
+    //   postAuthorElement.innerText = `Author: ${post.author}`;
+    // }
 
     if (postContentElement) {
       postContentElement.innerText = post.content;

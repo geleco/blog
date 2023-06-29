@@ -14,19 +14,29 @@
   <body>
     <header>
       <div id="top-bar">
-        <img id="logo" src="blog/img/logo.png" alt="blog's logo" /> The
-        Hobbit's BLOG
+        <a href="index.html">
+          <img id="logo" src="blog/img/logo.png" alt="blog's logo" />
+        </a>
+        The Hobbit's BLOG
       </div>
-      <h2>Post</h2>
-    </header>
+    </header>    
 
     <section class="container" id="post-container">
-      <img id="post-imageUrl"/>
-      <h1 id="post-title"></h1>
-      <p id="post-author"></p>
-      <div id="post-content"></div>
+      <div id="back-button-container">
+        <button id="back-button" onclick="goBack()">
+          <img src="blog/img/ArrowIcon.png" alt="Back" />
+        </button>
+      </div>
+      <div id="post-content-container">
+        <div id="post-image-container">
+          <img id="post-imageUrl" />
+        </div>
+        <h1 id="post-title"></h1>
+        <!-- <p id="post-author"></p> -->
+        <div id="post-content"></div>
+      </div>
     </section>
-    
+
     <script src="blog/src/post.js"></script>
   </body>
 </html>

@@ -42,6 +42,11 @@ var posts2 = [
         imageUrl: "blog/img/img_post6_opinion.jpg",
     },
 ];
+function goBack() {
+    window.history.back();
+}
+var backButton = document.getElementById('back-button');
+backButton.addEventListener('click', goBack);
 function getPostById(id) {
     return posts2.find(function (post) { return post.id === id; });
 }
@@ -53,7 +58,7 @@ function displayPost() {
     if (post) {
         var postImageElement = document.getElementById('post-imageUrl');
         var postTitleElement = document.getElementById('post-title');
-        var postAuthorElement = document.getElementById('post-author');
+        //const postAuthorElement = document.getElementById('post-author');
         var postContentElement = document.getElementById('post-content');
         if (postImageElement) {
             postImageElement.setAttribute('src', post.imageUrl);
@@ -61,9 +66,9 @@ function displayPost() {
         if (postTitleElement) {
             postTitleElement.innerText = post.title;
         }
-        if (postAuthorElement) {
-            postAuthorElement.innerText = "Author: ".concat(post.author);
-        }
+        // if (postAuthorElement) {
+        //   postAuthorElement.innerText = `Author: ${post.author}`;
+        // }
         if (postContentElement) {
             postContentElement.innerText = post.content;
         }

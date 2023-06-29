@@ -64,7 +64,7 @@ function renderPosts() {
         <img src="${post.imageUrl}" alt="${post.title}" />
         <h3>${post.title}</h3>
         <p>${post.content.substring(0, post.content.length / 2)}</p>
-        <p class="expand-text"></br>expands...</p>
+        <p id="expand-text"></br>expands...</p>
       `;
 
       postElement.addEventListener("click", () => {
