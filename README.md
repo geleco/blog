@@ -1,7 +1,7 @@
 <h1 align="center">Hobbit's BLOG</h1>
-<p align="center"><i>Um repositório referente ao desafio 1 do CompassUOL.</i></p>
+<p align="center"><i>A repository regarding Challenge 1 of CompassUOL.</i></p>
 
-# 📋 Desafio:
+# 📋 Challenge I:
 
 <p>Thinking about a project that has a list of "Posts," each containing an image, title, and a brief description. Each post needs to have a list of comments that users have left when entering that specific post. The challenge consists of: </p></br>
 • Create an "Posts" initial page with a list of posts, where each post should have a link to a second screen called "Post Details."</br>
@@ -22,7 +22,7 @@ The project should follow basic Git standards: Use multiple branches and make co
 
 ## 🚀  About
 
-Este projeto criou um blog baseado nos personagens de Tolkien, onde alguns desses personagens usaram o blog para falar sobre assuntos diversos. Para isso usei algumas tecnologias
+This project created a blog based on Tolkien's characters, where some of these characters used the blog to discuss various subjects. I used several technologies for this.
 
 ### 🛠️ Technologies
 <p display="inline-block">
